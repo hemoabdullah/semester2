@@ -18,14 +18,12 @@ public class bukumainn12 {
         bk2.tampilInformasi();
     }
 }
-
 class buku12 {
     String judul;
     String pengarang;
     int halaman;
     int stok;
     int harga;
-
     void tampilInformasi() {
         System.out.println("Judul: " + judul);
         System.out.println("Pengarang: " + pengarang);
