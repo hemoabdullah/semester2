@@ -1,26 +1,23 @@
 package jobsheet3 ;
-
 import java.util.Scanner;
 
-public class ArrayOfObject {
+    public class ArrayOfObject {
     public static void main(String[] args) {
-        Rectangle[] rectangleArray = new Rectangle[3];
         Scanner sc = new Scanner(System.in);
-        
-        for (int i =0; i < 3; i++) {
+        System.out.println("Enter the number of rectangles: ");
+        int numRectangles = sc.nextInt();
+        Rectangle[] rectangleArray = new Rectangle[numRectangles]; // Define array length based on user input
+        for (int i = 0; i < numRectangles; i++) {
             rectangleArray[i] = new Rectangle();
             System.out.println("Rectangle " + i);
-
             System.out.println("Input length : ");
             rectangleArray[i].length = sc.nextInt();
-
             System.out.println("Input width : ");
             rectangleArray[i].width = sc.nextInt();
         }
-        
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < numRectangles; i++) {
             System.out.println("Rectangle " + i);
-            System.out.println("width " + rectangleArray[0].width + ", length: " + rectangleArray[0].length);
+            System.out.println("width " + rectangleArray[i].width + ", length: " + rectangleArray[i].length);
         }
         rectangleArray[0] = new Rectangle();
         rectangleArray[0].length = 110;
