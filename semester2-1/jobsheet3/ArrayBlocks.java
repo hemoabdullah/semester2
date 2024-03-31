@@ -1,4 +1,3 @@
-package jobsheet3;
 
 public class ArrayBlocks {
     public static void main(String[] args) {

@@ -1,4 +1,3 @@
-package jobsheet3;
 
 public class employee {
     String name;
